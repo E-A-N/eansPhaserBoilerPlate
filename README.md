@@ -1,6 +1,6 @@
 <div align="center"><img src="https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png"></div>
 
-##How to install and run game
+## How to install and run game
 - Install git
 - On the commandline install nodeJs
     - This will automatically install npm which is used to run the game
@@ -13,7 +13,7 @@
 - Open up a web browser and go to this address `http://localhost:7777`
     - `http://127.0.0.1:7777` also works because these are representations of the "home" address
 
-##Naming Convention
+## Naming Convention
 - camel casing
     - applies to coding, files, and folders
     - example: `var name = "eanCharacter"`
