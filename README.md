@@ -19,7 +19,7 @@
     - example: `var name = "eanCharacter"`
 - no capitalizing 1st letters
 
-##Pipe line
+## Pipeline
 
 
 ## Description
