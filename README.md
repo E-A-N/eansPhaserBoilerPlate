@@ -36,7 +36,7 @@
     - `git commit -m "adding my file msg"` (timestamps your changes to the repository)
     - `git pull origin master` (pulls latest changes from repository)
     - `git push origin master` (pushes your updated changes to repository for other people to pull)
-       -Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct latest update.
+    - Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct version manually.
 
 ## Pipeline
 
