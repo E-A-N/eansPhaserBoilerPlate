@@ -46,7 +46,6 @@
         - If assets matches specs then a technical artist can add them to correct part of repository
         - Make sure to update any indexes and dependency references (like index.html) so assets can be loaded into the game
 
-
 ## Description
 Game Development Tool to create awesome Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
 
