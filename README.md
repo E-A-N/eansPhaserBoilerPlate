@@ -1,6 +1,6 @@
 <div align="center"><img src="https://github.com/DallOner/Phaser-Boilerplate/blob/master/assets/img/boilerplate-logo.png"></div>
 
-## How to install and run game
+## How to install the game
 - Install git
     - Here's an installion guide for [git](https://www.atlassian.com/git/tutorials/install-git)
 - Install github (optional)
@@ -14,10 +14,15 @@
     - This should be achieved by entering `cd eanPhaserBoilerPlate`
 - In command line run `npm install`
     - Our backend uses nodejs so this will install the resources our projects needs to run independently
+    
+## How to run the game
+- Inside commandline navigate to "eansPhaserBoilerPlate" folder (if you're not already there)
+    - This should be achieved by entering `cd eanPhaserBoilerPlate`
 - In command line run `npm start`
     - This script actually starts up our server (which means our game is running)
 - Open up a web browser and go to this address `http://localhost:7777`
     - `http://127.0.0.1:7777` also works because these are representations of the "home" address
+- From here you'll be able to play the game!
 
 ## Naming Convention
 - camel casing
