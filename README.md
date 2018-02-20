@@ -39,12 +39,12 @@
     - Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct version manually.
 
 ## Pipeline
-    - Generic Asset Integration
-        - Art, sounds, json files, or any file that does not contain game logic can be considered a generic asset
-        - Before any assets are created make sure any specs are documented
-        - Assets that are complete should be inserted into the `assetDump` directory
-        - If assets matches specs then a technical artist can add them to correct part of repository
-        - Make sure to update any indexes and dependency references (like index.html) so assets can be loaded into the game
+- Generic Asset Integration
+    - Art, sounds, json files, or any file that does not contain game logic can be considered a generic asset
+    - Before any assets are created make sure any specs are documented
+    - Assets that are complete should be inserted into the `assetDump` directory
+    - If assets matches specs then a technical artist can add them to correct part of repository
+    - Make sure to update any indexes and dependency references (like index.html) so assets can be loaded into the game
 
 ## Description
 Game Development Tool to create awesome Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
