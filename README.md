@@ -39,8 +39,6 @@
     - Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct version manually.
 
 ## Pipeline
-    -# Art
-
 
 ## Description
 Game Development Tool to create awesome Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
