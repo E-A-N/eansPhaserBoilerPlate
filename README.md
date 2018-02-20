@@ -39,6 +39,7 @@
     - Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct version manually.
 
 ## Pipeline
+    -# Art
 
 
 ## Description
