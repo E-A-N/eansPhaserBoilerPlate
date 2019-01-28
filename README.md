@@ -95,3 +95,12 @@
 
 ### Finite State Machine (FSM)
    * FSMs control the transitions, initiation, and referencing of various game states.
+
+## Contributers
+<a href="https://github.com/E-A-N">
+    <img width="100" height="100" src="https://avatars1.githubusercontent.com/u/17329104?s=460&v=4">
+</a>
+
+<a href="https://github.com/JohnJBarrett22">
+    <img width="100" height="100" src="https://avatars0.githubusercontent.com/u/44798179?s=400&v=4">
+</a>
