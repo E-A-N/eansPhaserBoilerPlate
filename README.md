@@ -24,6 +24,9 @@
     - `http://127.0.0.1:7777` also works because these are representations of the "home" address
 - From here you'll be able to play the game!
 
+## Link to lastest stable build of game goes here:
+`https://gameName.com`
+
 ## Naming Convention
 - camel casing
     - applies to coding, files, and folders
@@ -38,39 +41,57 @@
     - `git push origin master` (pushes your updated changes to repository for other people to pull)
     - Sometimes a push or pull may result in a merge conflict, when this happens just make resolve the conflict by updating files to their correct version manually.
 
-## Pipeline
+## Workflow
 - Generic Asset Integration
     - Art, sounds, json files, or any file that does not contain game logic can be considered a generic asset
     - Before any assets are created make sure any specs are documented
     - Assets that are complete should be inserted into the `assetDump` directory
     - If assets matches specs then a technical artist can add them to correct part of repository
     - Make sure to update any indexes and dependency references (like index.html) so assets can be loaded into the game
+- **Add a google drive or cloud storage link for assets here**      
 
-## Description
-Game Development Tool to create awesome Html5 games using [Phaser](http://phaser.io/) Framework. Useful tool for those new to the world of Phaser. Speed up your work with a simple download!
+## Pipeline
+- **Adding Game States**
+    - Create new javascript file in javascript directory.
+    - Declare state name inside of a new js file.
+        - ` var gameState = {}; `
+    - Go to index.html and add it to the script BEFORE stateManager.
+        - `<script type="text/javascript" src="javascript/gameState.js"></script> `
+        - `<script type="text/javascript" src="javascript/stateManager.js"></script>`
+    - Inside the stateManager add the state
+        - `game.state.add("gameStateKey",gameState);`
+    - To access use game.state.start from any point in the game
+        - `game.state.start("gameStateKey");`
 
-"An easy to install set of skeleton classes to speed-up development start time." - [Richard Darvey](https://twitter.com/photonstorm)
+- **Deploying**
+    - Bump the build number in ```buildVersion.txt```
+        - Build number convention is ```Version.Major.Minor``` Example: ```1.5.11```
 
-## Features:
-- Phaser 2.9.2. (minified).
-- Some plugins for better performance.
-- Develop in State mode: StateManager, Boot, Load & Menu.
-- Load Assets: Boilerplate Logo.
+## Config Information
+  - ***settings.js***
+    - `stage` contains default width and height parameters of game
 
-## Plugins Installed:
-- [Phaser-Debug](https://github.com/englercj/phaser-debug) v1.1.9
-- [Phaser-Inspector](https://github.com/netcell/phaser-inspector) v0.1
-- [Phaser-Isometric](https://github.com/lewster32/phaser-plugin-isometric) v0.9.4
-- [Phaser-Input](https://github.com/orange-games/phaser-input) v2.0.5
-- [Phaser-SuperStorage](https://github.com/orange-games/phaser-super-storage) v1.0.4                
 
-## To Install:
-Clone the git repo:
-`git clone https://github.com/DallOner/Phaser-Boilerplate.git`
+# Current Project Roles
 
-Or checkout the [Tagged Release](https://github.com/DallOner/Phaser-Boilerplate/releases) you'd like to use.
+### Init Logic
+   * Init Logic creates the game itself, and ensures that all dependencies exist.
 
-## Credits
+### Boot Logic
+   * Boot Logic Dictates how we start the game and the context in which we start the game.
 
-englercj, netcell, lewster32, Orange Games...
-### Special Thanks to all those people who have given me support and their valuable feedback
+### Loader Logic
+   * Loader Logic is decides how and when we manage the including of resources in the game
+
+### Game Start Logic
+   * Game Start Logic determines how we start the game (a main menu for example) and should ideally only happen once
+
+### Game Loop
+   * Game Loop is where movement, physics, game play logic, etc is implemented
+
+### Game Over Logic
+
+   * This logic occurs when the game loop has ended
+
+### Finite State Machine (FSM)
+   * FSMs control the transitions, initiation, and referencing of various game states.
