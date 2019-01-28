@@ -8,7 +8,12 @@ const loadState = {
         In this case of loading, only text is placed...
         */
 
-        let loadingLabel = game.add.text(80, 150, 'loading...', {font: '30px Courier', fill: '#fff'});
+        let loadingLabel = game.add.text(
+            config.loadState.label.x,
+            config.loadState.label.y,
+            config.loadState.label.print,
+            config.loadState.style
+        );
 
         //Load your images, spritesheets, bitmaps...
         game.load.image('boiler-logo', 'assets/img/boilerplate-logo.png');
