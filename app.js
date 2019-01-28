@@ -4,14 +4,12 @@ const app  = express();
 const path = require('path');
 
 //open port for game to be played on
-var sitePath = process.argv[2] || "client";
-var port = 7777;
-var address = "http://localhost:";
+let sitePath = "client";
+let port = process.argv[2] || 7777;
+let address = "http://localhost:";
 
-var gameRoute = path.join(__dirname, sitePath);
+let gameRoute = path.join(__dirname, sitePath);
 gameRoute = path.normalize(gameRoute);
-
-
 
 //request logging
 app.use(function(req, res, next) {

@@ -1,6 +1,6 @@
-var bootState = {
+const bootState = {
 
-    create: function () {
+    create: () => {
 
         //Initial GameSystem (Arcade, P2, Ninja)
         game.physics.startSystem(Phaser.Physics.ARCADE);
