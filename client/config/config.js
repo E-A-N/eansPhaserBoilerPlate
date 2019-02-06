@@ -1,5 +1,11 @@
 const config = {};
 config.default = {};
+config.default.gameSpecs = {
+    width: 375,
+    height: 812,
+    renderType: Phaser.AUTO,
+    parentID : "gameContainer"
+};
 config.loadState = {
     style: {
         font: "30px Courier",
@@ -15,10 +21,11 @@ config.loadState = {
 };
 config.bootState = {};
 config.menuState = {
-    boilerLogo : {
-        x: 95,
-        y: 150,
-        spriteKey: "boiler-logo"
+    logo : {
+        x: config.default.gameSpecs.width * 0.5,
+        y: config.default.gameSpecs.height * 0.5,
+        spriteKey: "menuLogo",
+        spriteSrc: "assets/img/phaserLogo.png"
     }
 };
 
@@ -28,12 +35,7 @@ config.default.stateManager = {
     loadState: "load",
     menuState: "menu"
 }
-config.default.gameSpecs = {
-    width: 640,
-    height: 480,
-    renderType: Phaser.AUTO,
-    parentID : "gameContainer"
-};
+
 
 
 let isNodeJsCompatible = typeof module !== "undefined"

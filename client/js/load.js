@@ -16,7 +16,7 @@ const loadState = {
         );
 
         //Load your images, spritesheets, bitmaps...
-        game.load.image('boiler-logo', 'assets/img/boilerplate-logo.png');
+        game.load.image(config.menuState.logo.spriteKey, config.menuState.logo.spriteSrc);
 
 
         //Load your sounds, efx, music...
